@@ -1,0 +1,23 @@
+<div class="bg-gray-600 h-40 py-4 flex items-center justify-between">
+    <div class="flex items-center">
+        <img src="assets/angular.svg" alt="Logo" class="h-24 ml-4">
+    </div>
+
+    <div class="flex flex-grow items-center">
+        <div class="w-full">
+            <app-secciones [backgroundColor]="backgroundColor"></app-secciones>
+        </div>
+        
+        <div class="flex flex-col pr-10">
+            <button class="bg-green-400 px-8 py-1 rounded-lg mb-2" (click)="changeBackgroundColor('green')">
+                <span class="block whitespace-nowrap">ELEMENTOS FERROSOS</span>
+            </button>
+            <button class="bg-red-400 px-8 py-1 rounded-lg mb-2" (click)="changeBackgroundColor('red')">
+                <span class="block whitespace-nowrap">ELEMENTOS NO FERROSOS</span>
+            </button>
+            <button class="bg-yellow-400 px-8 py-1 rounded-lg" (click)="changeBackgroundColor('yellow')">
+                <span class="block whitespace-nowrap">TODOS LOS ELEMENTOS</span>
+            </button>
+        </div>
+        
+</div>
